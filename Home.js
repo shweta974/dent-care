@@ -8,52 +8,13 @@ import Service from '../service-3.jpg'
 import Service2 from '../service-4.jpg'
 import Team1 from  '../team-1.jpg'
 import Team2 from  '../team-2.jpg'
-import Team3 from '../team-3.jpg'
-import Team4 from '../team-4.jpg'
-import Team5 from '../team-5.jpg'
-import Caro1 from '../carousel-1.jpg'
-import Caro2 from '../carousel-2.jpg'
+
 
 
 const Home = () => {
     return (
         <div className="home">
-
-<div id="header-carousel" className="carousel slide carousel-fade bg-dark  "  >
-            <div className=" carousel-inner   ">
-                <div className="carousel-item active">
-                    <img className="w-100" src={Caro1} alt="Image" />
-                    <div className="carousel-caption d-flex flex-column align-items-center justify-content-center">
-                        <div className="p-3"  style={{maxWidth:"900px"}}>
-                            <h5 className="text-white text-uppercase mb-3 animated slideInDown">Keep Your Teeth Healthy</h5>
-                            <h1 className="display-1 text-white mb-md-4 animated zoomIn">Take The Best Quality Dental Treatment</h1>
-                            <a href="appointment.html" className="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Appointment</a>
-                            <a href="" className="btn btn-secondary py-md-3 px-md-5 animated slideInRight">Contact Us</a>
-                        </div>
-                    </div>
-                </div>
-                <div className="carousel-item">
-                    <img className="w-100" src={Caro2} alt="Image"/>
-                    <div className="carousel-caption d-flex flex-column align-items-center justify-content-center">
-                        <div className="p-3" style={{maxWidth:" 900px"}}>
-                            <h5 className="text-white text-uppercase mb-3 animated slideInDown">Keep Your Teeth Healthy</h5>
-                            <h1 className="display-1 text-white mb-md-4 animated zoomIn">Take The Best Quality Dental Treatment</h1>
-                            <a href="appointment.html" className="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Appointment</a>
-                            <a href="" className="btn btn-secondary py-md-3 px-md-5 animated slideInRight">Contact Us</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#header-carousel" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
-            {/* <div className="hero-container text-xxl-center p-6 ">
+            <div className="hero-container text-xxl-center p-6 ">
 
                 <div className="hero-content text-align-center">
                     <p className="para  text-center mt-20">KEEP YOUR TEETH HEALTHY</p>
@@ -63,11 +24,11 @@ const Home = () => {
                         <button className="hero-button">Appointment</button>
                         <button className="hero-button">Contact us</button>
                     </div>
-                   
+                    {/* {/* </div> */}
                 </div>
-               
+                {/* </div> */}
                 
-            </div> */}
+            </div>
 
             {/* card */}
 
@@ -81,7 +42,7 @@ const Home = () => {
                                         <h4>Mon-fri    9:00-10:30am</h4>
                                         <h4>Mon-fri    9:00-10:30am</h4>
                                         <h4>Mon-fri    9:00-10:30am</h4>
-                                        <button className="hero-button text-md-center">Appointment</button>
+                                        <button className="hero-button">Appointment</button>
                                          </div>
                                     <div className="col-sm-4  md-4 text-white  bg-dark">
                                         <h2>Search A Doctor</h2>
@@ -89,7 +50,7 @@ const Home = () => {
                                         <br/>
                                         <input type="text" placeholder="Doctor Name" style={{padding:"5px",margin:"4px"}} />
                                         <br/>
-                                        <button className="hero-button text-center">Search</button>
+                                        <button className="hero-button">Search</button>
                                     </div>
                                     <div className="col-sm-4  md-4 text-white bg-danger">
                                         <h2>Make Appointment</h2>
@@ -326,15 +287,10 @@ const Home = () => {
                         <div className="box-content">
                             <div className="box-left">
                                 <div className="box-left-info">
-                                 <img  src={Team3}/>
-                                 <ul className="list-icons d-flex gap-4 text-center text-white p-2 m-2 ">
-                            <li className="icons bg-light p-2"><a href="#"><i className="fa-brands fa-facebook"></i></a></li>
-                            <li className="icons bg-light p-2"><a href="#"><i className="fa-brands fa-twitter"></i></a></li>
-                            <li className="icons bg-light p-2"><a href="#"><i className="fa-brands fa-google"></i></a></li>
-                            <li className="icons bg-light p-2"><a href="#"><i className="fa-brands fa-linkedin"></i></a></li>
-                        </ul>
-                        <h3>Dr John Joe</h3>
-                        <h4>Dental Implants</h4>
+                                   <h2 className="text-info ">Our Dentist</h2>
+                                   <h1 className="head text-dark"><b>Meet Our Certified &
+                                     Experienced Dentist </b></h1>
+                                   <button className="hero-button p-2 bg-white text-dark m-3 rounded">Appointment</button>
 
                             
                        
@@ -343,7 +299,7 @@ const Home = () => {
                                 </div>
                             <div className="box-mid m-5"> 
                             <div className="box-mid-info">
-                                    <img src={Team4}/>
+                                    <img src={Team1}/>
                                     <ul className="list-icons d-flex gap-4 text-center text-white p-2 m-2 ">
                             <li className="icons bg-light p-2"><a href="#"><i className="fa-brands fa-facebook"></i></a></li>
                             <li className="icons bg-light p-2"><a href="#"><i className="fa-brands fa-twitter"></i></a></li>
@@ -359,7 +315,7 @@ const Home = () => {
                             <div className="box-right m-5">
                                 
                             <div className="box-right-info">
-                                    <img src={Team5}/>
+                                    <img src={Team2}/>
                                     <ul className="list-icons d-flex gap-4 text-center text-white p-2 m-2 ">
                             <li className="icons bg-light p-2"><a href="#"><i className="fa-brands fa-facebook"></i></a></li>
                             <li className="icons bg-light p-2"><a href="#"><i className="fa-brands fa-twitter"></i></a></li>
