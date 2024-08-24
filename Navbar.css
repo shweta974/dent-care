@@ -1,0 +1,92 @@
+/* src/components/Navbar.css */
+
+.burger-menu {
+    display: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+  }
+  
+  .navbar-links.open {
+    display: flex;
+  }
+  
+  @media (max-width: 768px) {
+    .burger-menu {
+      display: block;
+    }
+  
+    .navbar-links {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+    }
+  
+    .navbar-links.open {
+      display: flex;
+    }
+  
+    .navbar-links li {
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #fff;
+    color: #0e0303;
+  }
+  
+  .navbar-logo a {
+    color: #19075b;
+    text-decoration: none;
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+  
+  .navbar-links {
+    list-style: none;
+    display: flex;
+    font-size: 1.5rem;
+    gap: 1rem;
+  }
+  
+  .navbar-links li a {
+    color: #6fa0e5;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    transition: 0.2s ease-in;
+  }
+  
+  .navbar-links li a:hover {
+    background-color: #090505;
+    color: #fff;
+    border-radius: 5px;
+    transform: translateY(-10px);
+  }
+
+  .btn{
+    background-color: #19075b;
+    border-radius: 10px;
+    color:#fff;
+    padding: 10px 20px;
+  }
+/* Add to src/components/Navbar.css */
+
+/* Responsive for smaller screens */
+@media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .navbar-links {
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+  }
+    
